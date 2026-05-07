@@ -25,11 +25,33 @@ let z = "hello" + 5;
 console.log(x, y, z);
 console.log(typeof x);
 
-// Operadorse relacionais
-console.log(x '5' == 5); // Compara tipo OU valor 
-console.log(x '5' === 5); // Compara tipo E valor 
+// Operadores relacionais
+console.log( '5' == 5); // Compara tipo OU valor 
+console.log( '5' === 5); // Compara tipo E valor 
 
 // Operadores de incremento
-console.log(x++);
+console.log(x++); //incremento após o retorno do valor
 console.log(x);
+console.log(++x); //incremento antes o retorno do valor
 
+// x==;
+// ++x;
+// x+= 1;
+// x = x +1;
+
+
+// operadores logicos - (&& AND) (|| OR) (! NOT) 
+let isExpression = (true && 5 + 2 * 3 < 10) || false
+console.log(isExpression);
+
+//if ... else
+// if (condition) {
+// condition === true
+// }
+// else {
+// condition === false
+// }
+
+//template strings
+let text = `react é tudo de bom...
+eu amo o ifrn` 
