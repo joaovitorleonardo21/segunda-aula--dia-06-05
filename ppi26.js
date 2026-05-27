@@ -262,26 +262,26 @@ console.log(estoque);
 
 */
 
-// RESPOSTAS DO DESAFIO
+// RESPOSTAS DO DESAFIO 
 
-// QUESTÃO (A)
-const valorTotal = estoque.reduce((soma, p) => soma + (p.price * p.qty), 0);
-console.log("a) Valor total: R$", valorTotal);
+// QUESTÃO (A) 
+const valorTotal = estoque.reduce((soma, p) => soma + (p.price * p.qty), 0); 
+console.log("a) Valor total: R$", valorTotal); 
 
-// QUESTÃO (B)
-const nomeCrescente = estoque.toSorted((a, b) => a.name.localeCompare(b.name));
-const nomeDecrescente = estoque.toSorted((a, b) => b.name.localeCompare(a.name));
+// QUESTÃO (B) 
+const nomeCrescente = estoque.toSorted((a, b) => a.name.localeCompare(b.name)); 
+const nomeDecrescente = estoque.toSorted((a, b) => b.name.localeCompare(a.name)); 
 
-console.log("b) Ordem alfabética (Crescente):", nomeCrescente);
-console.log("b) Ordem alfabética (Decrescente):", nomeDecrescente);
+console.log("b) Ordem alfabética (Crescente):", nomeCrescente); 
+console.log("b) Ordem alfabética (Decrescente):", nomeDecrescente); 
+ 
+// QUESTÃO (C) 
+const precoCrescente = estoque.toSorted((a, b) => a.price - b.price); 
+const precoDecrescente = estoque.toSorted((a, b) => b.price - a.price); 
 
-// QUESTÃO (C)
-const precoCrescente = estoque.toSorted((a, b) => a.price - b.price);
-const precoDecrescente = estoque.toSorted((a, b) => b.price - a.price);
-
-console.log("c) Ordem por preço (Crescente):", precoCrescente);
-console.log("c) Ordem por preço (Decrescente):", precoDecrescente);
-
-// QUESTÃO (D)
-const celulares = estoque.filter(p => p.category === "Celular");
-console.log("d) Apenas Celulares:", celulares)
+console.log("c) Ordem por preço (Crescente):", precoCrescente); 
+console.log("c) Ordem por preço (Decrescente):", precoDecrescente); 
+ 
+// QUESTÃO (D) 
+const celulares = estoque.filter(p => p.category === "Celular"); 
+console.log("d) Apenas Celulares:", celulares) 
