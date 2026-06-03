@@ -278,7 +278,7 @@ console.log("b) Ordem alfabética (Decrescente):", nomeDecrescente);
 // QUESTÃO (C) 
 const precoCrescente = estoque.toSorted((a, b) => a.price - b.price); 
 const precoDecrescente = estoque.toSorted((a, b) => b.price - a.price); 
-
+ff
 console.log("c) Ordem por preço (Crescente):", precoCrescente); 
 console.log("c) Ordem por preço (Decrescente):", precoDecrescente); 
  
